@@ -6,12 +6,16 @@ Allows you to prevent a fast respawn
 
 * Day of Defeat: Source
 
+### Requirements
+
+* [SourceMod](https://www.sourcemod.net) 1.11 or later
+
 ### Installation
 
-* Download latest [release](https://github.com/dronelektron/anti-fast-respawn/releases) (compiled for SourceMod 1.11)
-* Extract "plugins" and "translations" folders to "addons/sourcemod" folder of your server
+* Download latest [release](https://github.com/dronelektron/anti-fast-respawn/releases)
+* Extract `plugins` and `translations` folders to `addons/sourcemod` folder of your server
 * Install [fast-respawn-detector](https://github.com/dronelektron/fast-respawn-detector)
-* Install [punishment plugin](https://github.com/dronelektron/anti-fast-respawn-punishment) or write your own
+* Install [anti-fast-respawn-punishment](https://github.com/dronelektron/anti-fast-respawn-punishment)
 
 ### Console Variables
 
@@ -34,8 +38,8 @@ Allows you to prevent a fast respawn
 
 ### API
 
-* client - Client's number
+Called when punishing the `client`
 
-```
+```sourcepawn
 forward void OnFastRespawnPunishment(int client);
 ```
